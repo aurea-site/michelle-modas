@@ -97,3 +97,38 @@ header h1{font-family:Georgia,serif;font-weight:500;letter-spacing:.2px}
 .credit-register p{color:#d5b4bd;font-size:13px}
 @media(max-width:900px){.credit-layout{grid-template-columns:1fr}}
 @media(max-width:600px){.credit-layout{gap:0}.credit-clients{order:1}.credit-register{order:2}.credit-card{padding:15px}.credit-summary strong{font-size:17px}.credit-values{gap:7px}.credit-values b{font-size:13px}.credit-head h2{font-size:19px}.credit-count{font-size:10px}}
+
+/* Crediário expansivo e elegante */
+.credit-layout{display:flex!important;flex-direction:column!important;gap:16px!important;width:100%;max-width:100%}
+.credit-clients,.credit-register{width:100%;min-width:0}
+.credit-head{display:flex!important;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.credit-head h2{font-family:Georgia,serif;font-size:clamp(23px,3vw,30px);font-weight:500;margin:5px 0 12px}
+.credit-summary{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0 24px}
+.credit-summary>div{min-width:0;padding:18px;border:1px solid #774853;border-radius:15px;background:#24141a}
+.credit-summary small,.credit-values small{display:block!important;margin-bottom:8px}
+.credit-summary strong{display:block!important;font-size:clamp(19px,3vw,28px);overflow-wrap:anywhere}
+.credit-toolbar{display:grid;grid-template-columns:minmax(200px,2fr) minmax(150px,1fr) minmax(140px,1fr) auto;gap:10px;align-items:center;margin:12px 0}
+.credit-toolbar input,.credit-toolbar select{width:100%;min-width:0;min-height:45px}
+.credit-view-toggle{display:flex;gap:5px;border:1px solid #764652;border-radius:12px;padding:4px}
+.credit-view-toggle button{border:0;background:transparent;white-space:nowrap;font-size:12px;padding:9px}
+.credit-view-toggle button.selected{background:#915664;color:#fff;border-radius:8px}
+.credit-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.credit-cards.as-list{grid-template-columns:1fr}
+.credit-card{display:flex!important;flex-direction:column;min-width:0;margin:0!important;padding:22px!important;border-radius:18px;background:linear-gradient(145deg,#3b222b,#27161d);border:1px solid #754752}
+.credit-card-top{display:flex!important;justify-content:space-between;align-items:flex-start;gap:10px}
+.credit-card-top>div{min-width:0}
+.credit-card-top strong{font-size:19px}
+.credit-card-top small{display:block;margin-top:5px}
+.credit-ok,.credit-risk{flex-shrink:0;display:inline-flex;align-items:center}
+.credit-values{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:23px 0 18px}
+.credit-values>div{min-width:0}
+.credit-values b{display:block!important;font-size:clamp(13px,1.6vw,18px);overflow-wrap:anywhere}
+.credit-progress-label{display:flex!important;justify-content:space-between;align-items:center;margin-top:auto;gap:12px}
+.credit-track{display:block!important;width:100%;height:10px!important;overflow:hidden;border-radius:20px;background:#170d12;margin:11px 0 18px}
+.credit-fill{display:block!important;height:100%;border-radius:20px;background:linear-gradient(90deg,#a75b70,#edabb1)}
+.credit-receive{display:block;width:100%;min-height:45px}
+.credit-register{padding:16px 20px}
+.credit-form-toggle{display:block;width:100%;text-align:left;font-size:18px;font-weight:700;background:transparent;border:0;padding:10px 0}
+.credit-register form{max-width:680px}
+@media(max-width:1000px){.credit-toolbar{grid-template-columns:1fr 1fr}.credit-toolbar input{grid-column:1/-1}.credit-view-toggle{justify-content:center}}
+@media(max-width:600px){.credit-toolbar{grid-template-columns:1fr 1fr}.credit-toolbar input{grid-column:1/-1}.credit-toolbar select{font-size:12px;padding:10px 7px}.credit-view-toggle{grid-column:1/-1}.credit-cards{grid-template-columns:1fr}.credit-card{padding:18px!important}.credit-summary{gap:9px}.credit-summary>div{padding:13px}.credit-summary strong{font-size:18px}.credit-values b{font-size:14px}.credit-head h2{font-size:25px}}
