@@ -70,3 +70,30 @@ header h1{font-family:Georgia,serif;font-weight:500;letter-spacing:.2px}
  .login input{font-size:22px;letter-spacing:7px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}button,input,select{transition:none}}
+
+/* Crediário premium: carteira e utilização do limite */
+.credit-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,.8fr);gap:20px;align-items:start}
+.credit-head,.credit-card-top,.credit-progress-label{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.credit-head h2{margin:6px 0 18px}
+.credit-head small{font-size:10px;letter-spacing:1.6px;color:#d9a5b0}
+.credit-count{font-size:12px;color:#e9b5bc;border:1px solid #80515d;padding:7px 11px;border-radius:99px;white-space:nowrap}
+.credit-summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:2px 0 20px}
+.credit-summary>div{background:#201117;border:1px solid #633844;border-radius:14px;padding:15px}
+.credit-summary small,.credit-values small{display:block;color:#cba1ab;font-size:12px}
+.credit-summary strong{display:block;font-size:21px;margin-top:8px;color:#ffe0de;overflow-wrap:anywhere}
+.credit-card{border:1px solid #794650;background:linear-gradient(130deg,#392028,#29171e);padding:18px;border-radius:17px;margin:13px 0}
+.credit-card-top strong{font-size:18px}
+.credit-card-top small{display:block;margin-top:4px}
+.credit-ok,.credit-risk{font-size:11px;padding:7px 9px;border-radius:99px;white-space:nowrap;background:#345147;color:#c4f2d9}
+.credit-risk{background:#673a30;color:#ffd3ae}
+.credit-values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0}
+.credit-values b{display:block;margin-top:5px;font-size:15px;overflow-wrap:anywhere}
+.credit-progress-label{font-size:12px;color:#dfb5bf}
+.credit-progress-label strong{font-size:14px;color:#ffe1df}
+.credit-track{height:9px;background:#170d12;border:1px solid #56333b;border-radius:99px;overflow:hidden;margin:9px 0 14px}
+.credit-fill{height:100%;background:linear-gradient(90deg,#ad6379,#efadb0);border-radius:99px;transition:width .25s}
+.credit-fill.high{background:linear-gradient(90deg,#d18865,#f1c18c)}
+.credit-receive{width:100%;background:#54303b;border-color:#88525e}
+.credit-register p{color:#d5b4bd;font-size:13px}
+@media(max-width:900px){.credit-layout{grid-template-columns:1fr}}
+@media(max-width:600px){.credit-layout{gap:0}.credit-clients{order:1}.credit-register{order:2}.credit-card{padding:15px}.credit-summary strong{font-size:17px}.credit-values{gap:7px}.credit-values b{font-size:13px}.credit-head h2{font-size:19px}.credit-count{font-size:10px}}
