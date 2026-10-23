@@ -147,3 +147,18 @@ input,select,textarea{background:#39232c!important;border-color:#a27480!importan
 .gate{background:radial-gradient(circle at 20% 12%,#875762,#412630 70%)}
 .login{background:linear-gradient(145deg,#67434d,#4a2c36)}
 @media(max-width:600px){.work{background:linear-gradient(155deg,#63404b,#412932)}}
+
+/* Cadastro expansível de crediário e calendário de parcelas */
+.credit-client-form{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px!important;align-items:start}
+.credit-client-form>label{display:flex!important;flex-direction:column;gap:8px;min-width:0;font-weight:600}
+.credit-client-form input,.credit-client-form select,.credit-client-form textarea{width:100%!important;min-width:0;box-sizing:border-box;margin:0!important}
+.credit-client-form>button,.credit-installment-setup{grid-column:1/-1}
+.credit-installment-setup,.credit-installments{border:1px solid #aa7784;border-radius:16px;padding:16px;background:#442a34;margin:12px 0}
+.credit-installment-setup summary,.credit-installments summary{cursor:pointer;font-weight:700;color:#f9e8e8;list-style-position:inside}
+.credit-installment-setup p{line-height:1.5;color:#ead5da}
+.credit-installment-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.credit-installment-fields label{display:flex;flex-direction:column;gap:8px;min-width:0}
+.credit-installment-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid #79525e}
+.credit-installment-row:last-child{border-bottom:0}
+.credit-card-top small{display:block;overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:650px){.credit-client-form,.credit-installment-fields{grid-template-columns:minmax(0,1fr)}.credit-installment-row{font-size:13px}}
