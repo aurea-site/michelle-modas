@@ -1,0 +1,19 @@
+{
+  "name": "Michelle Modas",
+  "short_name": "Michelle Modas",
+  "description": "Gestão da loja Michelle Modas",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#52313b",
+  "theme_color": "#52313b",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
