@@ -132,3 +132,18 @@ header h1{font-family:Georgia,serif;font-weight:500;letter-spacing:.2px}
 .credit-register form{max-width:680px}
 @media(max-width:1000px){.credit-toolbar{grid-template-columns:1fr 1fr}.credit-toolbar input{grid-column:1/-1}.credit-view-toggle{justify-content:center}}
 @media(max-width:600px){.credit-toolbar{grid-template-columns:1fr 1fr}.credit-toolbar input{grid-column:1/-1}.credit-toolbar select{font-size:12px;padding:10px 7px}.credit-view-toggle{grid-column:1/-1}.credit-cards{grid-template-columns:1fr}.credit-card{padding:18px!important}.credit-summary{gap:9px}.credit-summary>div{padding:13px}.credit-summary strong{font-size:18px}.credit-values b{font-size:14px}.credit-head h2{font-size:25px}}
+
+/* Fundo rosé iluminado, mantendo contraste premium */
+body{background:#38232b;color:#fff2f0}
+.work{background:radial-gradient(ellipse at 80% 0%,#69404b 0%,#4c303a 43%,#39242d 100%)}
+aside{background:#432832;border-color:#80525e}
+header{background:#52313b;border-color:#80515d}
+section,.stats article{background:linear-gradient(145deg,#65404a,#50313b);border-color:#94616c}
+.credit-card{background:linear-gradient(145deg,#704651,#573641);border-color:#a06a77}
+.credit-summary>div{background:#4b2c36;border-color:#94616c}
+.credit-register{background:linear-gradient(145deg,#63404b,#51323c)}
+input,select,textarea{background:#39232c!important;border-color:#a27480!important;color:#fff7f5!important}
+.credit-track{background:#35212a;border-color:#95616d}
+.gate{background:radial-gradient(circle at 20% 12%,#875762,#412630 70%)}
+.login{background:linear-gradient(145deg,#67434d,#4a2c36)}
+@media(max-width:600px){.work{background:linear-gradient(155deg,#63404b,#412932)}}
